@@ -1,9 +1,15 @@
-# CoachUp — demo
+# CoachUp — interactive demo
 
-Static demo of **CoachUp**, an AI study tool for students: upload lecture material and get an overview, flashcards, a quiz and a summary, pre-generated with the Claude API.
+Static demo of **CoachUp**, an AI study tool I built for my own exam preparation: lecture material goes in; an overview, flashcards, quizzes, summary sheets and practice exams come out.
 
-This demo shows **one sample lecture** (Political Economics, Lecture 1). No account, no database, no live AI calls. Uploading your own material and the AI self-assessment are disabled here.
+**Live demo:** https://sweder-vs.github.io/coachup-demo/
 
-Full product stack: Next.js, Supabase, Clerk, Claude API (content generated in a CLI pipeline, so the web app is a pure reader with zero per-user AI cost).
+What the demo shows (two sample courses, in English and Dutch):
+- dashboard with progress rings and exam countdowns, course pages
+- lecture flow: overview, topics, scored flashcards, quiz, summary sheet "earned" by finishing the quiz
+- timed practice exam with per-topic results and mistake review
+- a simulated upload → generation pipeline, and a "How it works" page
 
-Live demo: https://sweder-vs.github.io/coachup-demo/
+This demo is **fully static**: no accounts, no database, no live AI. Content is pre-generated study material; uploads and the self-assessment are simulated. Progress is kept in the browser's localStorage.
+
+Stack of the full product: Next.js, TypeScript, Tailwind, Supabase, Clerk, Claude API.
